@@ -1,0 +1,23 @@
+{
+  "name": "cafeteria-sass",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS, Gulp y CSS Grid",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elis Antonio Perez",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "gulp": "^5.0.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "postcss": "^8.4.38",
+    "sass": "^1.75.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
+}
