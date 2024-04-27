@@ -1,5 +1,2 @@
-$color: blue;
-
-body {
-  background-color: $color;
-}
+@use 'generic';
+@use 'settings';
