@@ -79,10 +79,10 @@ exports.avifImg = avifImg;
 exports.watchTask = watchTask;
 
 exports.default = series(
+  scssToCssCompiler,
   optimizeImg,
   webpImg,
   avifImg,
-  scssToCssCompiler,
   watchTask
 );
 // exports.default = parallel(optimizeImg, scssToCssCompiler, watchTask);

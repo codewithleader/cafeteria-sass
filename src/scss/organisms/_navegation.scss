@@ -1,0 +1,42 @@
+// Funciones de SASS
+// @use 'sass:math';
+// Variables y mixins
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+
+.navbar-main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+
+  @include m.tablet {
+    flex-direction: row;
+    // gap: math.div(v.$spacing, 4);
+    gap: 1rem;
+    margin-top: 0;
+  }
+
+  a {
+    text-align: center;
+    color: c.$white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: c.$secondary;
+    }
+
+    @include m.tablet {
+      margin: 0;
+    }
+
+    &.active {
+      color: c.$secondary;
+    }
+  }
+
+}

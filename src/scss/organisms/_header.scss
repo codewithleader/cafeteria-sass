@@ -1,3 +1,49 @@
-@use '../settings/colors' as c;
-@use '../settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/variables' as v;
+@use 'settings/mixins' as m;
 
+* {
+  border: 0.1px dashed rgb(168, 237, 176);
+}
+
+.header {
+  padding: 5rem 0;
+  position: relative;
+
+  @include m.tablet {
+    min-height: 70rem;
+  }
+
+  &::before {
+    content: '';
+    background-color: c.$black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-home {
+    background-image: url(../img/header_inicio.jpg);
+  }
+
+  &-content {
+    position: relative;
+  }
+
+  &-text {
+    margin-top: 5rem;
+
+    @include m.tablet {
+      margin-top: 10rem;
+    }
+
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      color: c.$white;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+.logo {
+  width: 50%;
+  margin: 0 auto;
+
+  @include m.tablet {
+    width: 20rem;
+    margin: 0;
+  }
+}

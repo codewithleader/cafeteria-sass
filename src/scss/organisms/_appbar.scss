@@ -1,0 +1,14 @@
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+.appbar {
+  display: flex;
+  flex-direction: column;
+
+  @include m.tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
