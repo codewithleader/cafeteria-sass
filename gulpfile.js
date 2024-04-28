@@ -13,6 +13,8 @@ const autoprefixer = require('autoprefixer');
 
 // Images
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
+const avif = require('gulp-avif');
 
 function scssToCssCompiler(done) {
   // Pasos para compilar los archivos Sass
@@ -37,6 +39,34 @@ function optimizeImg(done) {
   done();
 }
 
+// Convertir imagenes a webp
+function webpImg(done) {
+  const options = {
+    quality: 50,
+  };
+
+  src('src/images/**/*.{png,jpg}')
+    //
+    .pipe(webp(options))
+    .pipe(dest('public/img'));
+
+  done();
+}
+
+// Convertir imagenes a avif
+function avifImg(done) {
+  const options = {
+    quality: 50,
+  };
+
+  src('src/images/**/*.{png,jpg}')
+    //
+    .pipe(avif(options))
+    .pipe(dest('public/img'));
+
+  done();
+}
+
 function watchTask() {
   watch('src/scss/**/*.scss', scssToCssCompiler);
   watch('src/images/**/*', optimizeImg);
@@ -44,9 +74,17 @@ function watchTask() {
 
 exports.scssToCssCompiler = scssToCssCompiler;
 exports.optimizeImg = optimizeImg;
+exports.webpImg = webpImg;
+exports.avifImg = avifImg;
 exports.watchTask = watchTask;
 
-exports.default = series(optimizeImg, scssToCssCompiler, watchTask);
+exports.default = series(
+  optimizeImg,
+  webpImg,
+  avifImg,
+  scssToCssCompiler,
+  watchTask
+);
 // exports.default = parallel(optimizeImg, scssToCssCompiler, watchTask);
 
 // series: Ejecuta tareas en serie
