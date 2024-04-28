@@ -1,12 +1,11 @@
 // Fonts
-$main_font: "Roboto", sans-serif;
+$main_font: 'Roboto', sans-serif;
 
 // Font Weight
 $light: 300;
 $normal: 400;
 $bold: 700;
 $extra_bold: 900;
-
 
 // Media Queries
 $mobile: 480px;
@@ -16,12 +15,3 @@ $xl_desktop: 1200px;
 
 // Unit
 $spacing: 5rem;
-
-// Colors
-$primary: #E8505B;
-$secondary: #455A64;
-
-// Common
-$white: #fff;
-$black: #000;
-$gray_light: #eceeef;

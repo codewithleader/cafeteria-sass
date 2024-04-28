@@ -1,0 +1,5 @@
+@use '../settings/colors' as c;
+
+.bg-primary {
+  background-color: c.$primary;
+}
