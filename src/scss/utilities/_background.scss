@@ -1,5 +1,9 @@
-@use '../settings/colors' as c;
+@use 'settings/colors' as c;
 
 .bg-primary {
   background-color: c.$primary;
+}
+
+.bg-white {
+  background-color: c.$white;
 }

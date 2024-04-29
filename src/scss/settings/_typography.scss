@@ -13,6 +13,11 @@ p {
   line-height: 2;
 }
 
+blockquote {
+  @extend p;
+  margin: 0;
+}
+
 a {
   all: unset;
   cursor: pointer;
@@ -58,6 +63,21 @@ h2 {
 h3 {
   font-size: 3.2rem;
 }
+
+// HEADINGS
+.heading-white {
+  @extend h2;
+  color: c.$white;
+
+  span {
+    color: c.$white;
+  }
+
+  &::after {
+    display: none;
+  }
+}
+
 
 // <h1> a <h6>: Estas son las etiquetas de encabezado, que varían en tamaño y enfatización. <h1> es el más grande y generalmente se usa para los títulos principales, mientras que <h6> es el más pequeño.
 // <p>: Esta etiqueta define un párrafo. Es la etiqueta más común para agrupar texto en un bloque.
