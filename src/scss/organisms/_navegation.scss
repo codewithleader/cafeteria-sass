@@ -11,7 +11,7 @@
   flex-direction: column;
   margin-top: 5rem;
 
-  @include m.tablet {
+  @include m.tablet_768 {
     flex-direction: row;
     // gap: math.div(v.$spacing, 4);
     gap: 1rem;
@@ -30,7 +30,7 @@
       color: c.$secondary;
     }
 
-    @include m.tablet {
+    @include m.tablet_768 {
       margin: 0;
     }
 

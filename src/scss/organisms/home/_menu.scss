@@ -11,18 +11,18 @@
 
   padding: 15rem 2rem 20rem 2rem;
 
-  @include m.tablet {
+  @include m.tablet_768 {
     background-size: 100%;
     padding: 15rem 0 20rem 0;
   }
 
-  @include m.desktop {
+  @include m.desktop_1024 {
     background-size: 50%, 50%, 100%; // 100% para el color
   }
 }
 
 .menu-grid {
-  @include m.tablet {
+  @include m.tablet_768 {
     @include m.grid(2, 2rem);
   }
 }

@@ -2,8 +2,11 @@
 @forward 'footer';
 @forward 'appbar';
 @forward 'navegation';
-@forward 'home/content';
+@forward 'content';
+// Pages
 @forward 'home/icons';
 @forward 'home/gallery';
 @forward 'home/menu';
 @forward 'home/testimonials';
+// about
+@forward 'about/about';

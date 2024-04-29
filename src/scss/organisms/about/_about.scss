@@ -1,0 +1,42 @@
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+.about-container {
+  @include m.tablet_768 {
+    padding: 3rem;
+  }
+
+  @include m.tablet_992 {
+    padding: 10rem;
+  }
+}
+
+.about-content {
+  @include m.tablet_768 {
+    @include m.grid(2, 2rem);
+    align-items: center;
+  }
+
+  .image {
+    margin-bottom: 3rem;
+
+    @include m.tablet_768 {
+      margin: 0 2rem 0 0;
+    }
+
+    img {
+      margin: 0 auto;
+      transform: rotate(-6deg) scale(0.9);
+      border: 3rem solid c.$white;
+      box-shadow: 9px 10px 5px -7px rgb(0 0 0 / 0.35);
+    }
+  }
+
+  .text {
+    blockquote {
+      padding: 1rem;
+      border-left: 0.5rem solid c.$primary;
+    }
+  }
+}

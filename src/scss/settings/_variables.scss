@@ -10,10 +10,11 @@ $bold: 700;
 $extra_bold: 900;
 
 // Media Queries
-$mobile: 480px;
-$tablet: 768px;
-$desktop: 1024px;
-$xl_desktop: 1200px;
+$mobile_414: 414px; // iPhone 6S
+$tablet_768: 768px; // iPad Mini
+$tablet_992: 992px; // tablet generic
+$desktop_1024: 1024px; // iPad Pro
+$xl_desktop_1280: 1280px; // Laptop
 
 // Unit
 $spacing: 5rem;

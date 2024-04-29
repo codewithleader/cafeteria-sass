@@ -5,8 +5,10 @@
 .header {
   padding: 5rem 0;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  @include m.tablet {
+  @include m.tablet_768 {
     min-height: 70rem;
   }
 
@@ -21,10 +23,6 @@
     left: 0;
   }
 
-  &-home {
-    background-image: url(../img/header_inicio.jpg);
-  }
-
   &-content {
     position: relative;
   }
@@ -32,7 +30,7 @@
   &-text {
     margin-top: 5rem;
 
-    @include m.tablet {
+    @include m.tablet_768 {
       margin-top: 10rem;
     }
 
@@ -42,4 +40,12 @@
       color: c.$white;
     }
   }
+}
+
+.header-home {
+  background-image: url(../img/header_inicio.jpg);
+}
+
+.header-about {
+  background-image: url(../img/header_nosotros.jpg);
 }

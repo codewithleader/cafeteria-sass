@@ -6,7 +6,7 @@
   width: 50%;
   margin: 0 auto;
 
-  @include m.tablet {
+  @include m.tablet_768 {
     width: 20rem;
     margin: 0;
   }

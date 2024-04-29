@@ -7,7 +7,7 @@
   padding: 5rem 2rem;
   background-color: c.$white;
 
-  @include m.tablet {
+  @include m.tablet_768 {
     padding: 10rem;
     margin-top: -10rem;
     position: relative;

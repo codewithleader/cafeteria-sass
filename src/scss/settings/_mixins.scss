@@ -1,25 +1,31 @@
 @use 'variables' as v;
 
-@mixin mobile {
-  @media (min-width: v.$mobile) {
+@mixin mobile_414 {
+  @media (min-width: v.$mobile_414) {
     @content;
   }
 }
 
-@mixin tablet {
-  @media (min-width: v.$tablet) {
+@mixin tablet_768 {
+  @media (min-width: v.$tablet_768) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: v.$desktop) {
+@mixin tablet_992 {
+  @media (min-width: v.$tablet_992) {
     @content;
   }
 }
 
-@mixin xl_desktop {
-  @media (min-width: v.$xl_desktop) {
+@mixin desktop_1024 {
+  @media (min-width: v.$desktop_1024) {
+    @content;
+  }
+}
+
+@mixin xl_desktop_1280 {
+  @media (min-width: v.$xl_desktop_1280) {
     @content;
   }
 }

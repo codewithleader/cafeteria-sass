@@ -5,7 +5,7 @@
 .gallery {
   @include m.grid(2, 2rem);
 
-  @include m.desktop {
+  @include m.desktop_1024 {
     @include m.grid(4, 2rem);
   }
 
@@ -16,7 +16,7 @@
       object-fit: cover;
     }
 
-    @include m.desktop {
+    @include m.desktop_1024 {
       &:nth-child(1) {
         grid-row: 1 / 3;
 

@@ -5,7 +5,7 @@
 .our-testimonials {
   padding: 10rem 2rem;
 
-  @include m.tablet {
+  @include m.tablet_768 {
     padding: 10rem;
   }
 
