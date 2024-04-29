@@ -2,13 +2,15 @@
 @use 'colors' as c;
 
 body {
-  font-family: v.$main_font;
+  font-family: v.$regular_font;
   font-size: 1.6rem;
+  background-color: c.$primary_light;
 }
 
 p {
   color: c.$black;
-  font-size: 2rem;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 a {
@@ -19,7 +21,11 @@ a {
 h1,
 h2,
 h3 {
+  font-family: v.$main_font;
   margin: 0 0 v.$spacing 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
 }
 
 h1 {
@@ -28,8 +34,38 @@ h1 {
 
 h2 {
   font-size: 3.6rem;
+  color: c.$primary;
+
+  span {
+    color: c.$secondary;
+    font-size: 1.8rem;
+    display: block; // para forzar el salto de linea
+  }
+
+  &::after {
+    content: '';
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    margin: 0 auto;
+    background-image: url(../img/cafe.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
 }
 
 h3 {
   font-size: 3.2rem;
 }
+
+// <h1> a <h6>: Estas son las etiquetas de encabezado, que varían en tamaño y enfatización. <h1> es el más grande y generalmente se usa para los títulos principales, mientras que <h6> es el más pequeño.
+// <p>: Esta etiqueta define un párrafo. Es la etiqueta más común para agrupar texto en un bloque.
+// <strong> y <b>: Ambas etiquetas se utilizan para dar énfasis a un texto haciéndolo negrita. <strong> tiene además un significado semántico, indicando que es importante o urgente.
+// <em> y <i>: Similar a <strong> y <b>, pero estas etiquetas se utilizan para hacer el texto en itálico. <em> tiene un significado semántico de énfasis estilístico.
+// <mark>: Esta etiqueta se usa para resaltar partes del texto.
+// <small>: Reduce el tamaño del texto para indicar texto secundario o menos importante.
+// <sub> y <sup>: Se utilizan para texto subíndice y superíndice respectivamente, como en fórmulas químicas o matemáticas.
+// <blockquote>: Se utiliza para indicar citas extensas de otros contenidos, afectando generalmente la indentación y estilo del texto.
+// <pre>: Muestra texto preformateado, usualmente en una fuente de ancho fijo, y preserva espacios y saltos de línea.
+// <code>: Se utiliza para mostrar una línea de código dentro de un texto, usualmente en una fuente de ancho fijo.

@@ -1,0 +1,15 @@
+
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+.main-content {
+  padding: 5rem 2rem;
+  background-color: c.$white;
+
+  @include m.tablet {
+    padding: 10rem;
+    margin-top: -10rem;
+    position: relative;
+  }
+}

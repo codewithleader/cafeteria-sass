@@ -4,3 +4,8 @@
 @use 'atoms';
 @use 'molecules';
 @use 'organisms';
+
+// TODO: quitar
+* {
+  border: 0.1px dashed #0038b8;
+}

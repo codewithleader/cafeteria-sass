@@ -2,10 +2,6 @@
 @use 'settings/variables' as v;
 @use 'settings/mixins' as m;
 
-* {
-  border: 0.1px dashed rgb(168, 237, 176);
-}
-
 .header {
   padding: 5rem 0;
   position: relative;
