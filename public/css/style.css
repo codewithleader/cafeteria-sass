@@ -495,6 +495,56 @@ img {
   color: #fff;
 }
 
+.footer {
+  background-color: #5e311e;
+}
+.footer-content {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+.footer-box {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-box {
+    margin-bottom: 0;
+  }
+}
+.footer-box h3 {
+  margin: 0 0 1rem 0;
+  font-family: "Bona Nova", serif;
+  font-size: 2.4rem;
+  color: #c39c63;
+}
+.footer-box p,
+.footer-box a {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.copyright {
+  text-align: center;
+  color: #ebe7de;
+  padding: 2rem;
+  margin: 0;
+}
+.copyright a {
+  font-weight: 700;
+  color: #c39c63;
+}
+.copyright a:hover {
+  color: #fff;
+}
+
 .appbar {
   display: flex;
   flex-direction: column;
@@ -724,8 +774,4 @@ img {
   font-family: "Bona Nova", serif;
   font-size: 2.4rem;
   color: #5e311e;
-}
-
-* {
-  border: 0.1px dashed #0038b8;
 }
