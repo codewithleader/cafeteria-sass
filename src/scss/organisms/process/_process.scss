@@ -1,0 +1,57 @@
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+.process-coffee {
+  margin-bottom: v.$spacing;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  // even: todos los numeros pares. Para impares usar odd
+  &:nth-child(even) {
+    .text {
+      order: -1; // mueve el texto al primer lugar y desplaza la imagen automaticamente.
+    }
+  }
+
+  @include m.tablet_768 {
+    display: flex;
+    gap: v.$spacing;
+    align-items: center;
+  }
+
+  .image,
+  .text {
+    flex: 1;
+  }
+
+  @include m.tablet_768 {
+    .image {
+      img {
+        height: 40rem;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .text {
+    margin-top: 1rem;
+
+    h3 {
+      margin: 0;
+      text-align: left;
+      color: c.$primary;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 50%;
+        height: 5px;
+        background-color: c.$secondary;
+      }
+    }
+  }
+}
