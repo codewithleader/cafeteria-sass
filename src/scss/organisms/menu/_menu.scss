@@ -1,0 +1,38 @@
+@use 'settings/variables' as v;
+@use 'settings/colors' as c;
+@use 'settings/mixins' as m;
+
+.menu-content {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3 / 4;
+
+  @include m.tablet_600 {
+    aspect-ratio: 5 / 5;
+  }
+
+  @include m.tablet_712 {
+    aspect-ratio: 3 / 3;
+  }
+
+  @include m.tablet_768 {
+    @include m.grid(2, v.$spacing);
+    aspect-ratio: 16 / 6;
+    background-size: 50%;
+    background-position: bottom right;
+  }
+
+  .texto {
+    p {
+      font-size: 2rem;
+    }
+  }
+}
+
+.menu-container {
+  @include m.mqFromTo(768px, 991px) {
+    padding: 5rem 5rem 0;
+  }
+}

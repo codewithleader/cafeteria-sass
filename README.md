@@ -17,3 +17,5 @@ npm i
 ```bash
 gulp
 ```
+
+4. Modifica al gusto el SCSS

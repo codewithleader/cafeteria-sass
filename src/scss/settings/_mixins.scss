@@ -6,8 +6,26 @@
   }
 }
 
+@mixin tablet_600 {
+  @media (min-width: v.$tablet_600) {
+    @content;
+  }
+}
+
+@mixin tablet_712 {
+  @media (min-width: v.$tablet_712) {
+    @content;
+  }
+}
+
 @mixin tablet_768 {
   @media (min-width: v.$tablet_768) {
+    @content;
+  }
+}
+
+@mixin tablet_800 {
+  @media (min-width: v.$tablet_800) {
     @content;
   }
 }
@@ -26,6 +44,13 @@
 
 @mixin xl_desktop_1280 {
   @media (min-width: v.$xl_desktop_1280) {
+    @content;
+  }
+}
+
+// From To
+@mixin mqFromTo($from, $to) {
+  @media only screen and (min-width: $from) and (max-width: $to) {
     @content;
   }
 }

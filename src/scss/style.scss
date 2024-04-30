@@ -1,9 +1,10 @@
 @use 'generic';
 @use 'settings';
-@use 'utilities';
 @use 'atoms';
 @use 'molecules';
 @use 'organisms';
+// Utilidades siempre al final
+@use 'utilities';
 
 // TODO: quitar
 // * {

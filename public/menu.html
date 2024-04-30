@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Cafetería SASS | Menú</title>
+  </head>
+  <body>
+    <header class="header header-menu">
+      <div class="header-content container">
+        <div class="appbar">
+          <div class="logo">
+            <img src="img/logo.svg" alt="Cafeteria logo" />
+          </div>
+
+          <nav class="navbar-main">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Nosotros</a>
+            <a href="process.html">Proceso</a>
+            <a class="active" href="menu.html">Menú</a>
+            <a href="gallery.html">Galería</a>
+            <a href="contact.html">Contacto</a>
+          </nav>
+        </div>
+
+        <!-- Text -->
+        <div class="header-text">
+          <h1>Disfruta Nuestro Delicioso Menú</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container main-content menu-container padding-bottom-0">
+      <h2><span>Utilizamos los mejores</span>Ingredientes</h2>
+
+      <div class="menu-content">
+        <div class="text">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores
+            ipsam repellendus quo eaque? Ipsa blanditiis consequuntur quisquam
+            rem sed culpa porro eveniet, fuga, voluptates ut fugit consequatur?
+            Iure, sequi nostrum! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Eos repudiandae assumenda in architecto temporibus
+            beatae, aliquam, adipisci, magnam vel earum perspiciatis corporis
+            ut.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Our Menu -->
+    <section class="our-menu">
+      <h2 class="heading-white"><span>Nuestro Delicioso</span>Menú</h2>
+
+      <div class="container menu-grid">
+        <section class="menu coffe">
+          <h3>Café</h3>
+
+          <ul>
+            <li>
+              <p>
+                Café Latte
+                <span>Café Espresso con leche caliente evaporada</span>
+              </p>
+              <p class="price">$25</p>
+            </li>
+            <li>
+              <p>Café Mocha <span>Espresso con crema batida</span></p>
+              <p class="price">$30</p>
+            </li>
+            <li>
+              <p>Café Americano <span>Café Negro</span></p>
+              <p class="price">$30</p>
+            </li>
+            <li>
+              <p>Capuccino<span>Espresso con una capa suave de espuma</span></p>
+              <p class="price">$25</p>
+            </li>
+            <li>
+              <p>
+                Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span>
+              </p>
+              <p class="price">$29</p>
+            </li>
+            <li>
+              <p>
+                Mocha Frio Quemado<span
+                  >Espresso, hielo, con azucar quemada y mantequilla.</span
+                >
+              </p>
+              <p class="price">$35</p>
+            </li>
+            <li>
+              <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span></p>
+              <p class="price">$39</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="menu food">
+          <h3>Comida</h3>
+
+          <ul>
+            <li>
+              <p>
+                Baguette de Pollo
+                <span>Delicioso Baguette con pollo a la plancha</span>
+              </p>
+              <p class="price">$45</p>
+            </li>
+            <li>
+              <p>
+                Baguette Pollo y Queso
+                <span>Baguette combinado con Pollo y Queso Manchego</span>
+              </p>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <p>
+                Baguette con Tocino<span
+                  >Baguette con especias y verduras, además de tocino</span
+                >
+              </p>
+              <p class="price">$50</p>
+            </li>
+            <li>
+              <p>
+                Baguette de Jamón<span
+                  >Delicioso Baguette con Jamón y Especias</span
+                >
+              </p>
+              <p class="price">$65</p>
+            </li>
+            <li>
+              <p>
+                Baguette con Jamón, Queso y Tocino<span
+                  >El especial de la casa</span
+                >
+              </p>
+              <p class="price">$69</p>
+            </li>
+            <li>
+              <p>
+                Sandwich de Pollo<span
+                  >Delicioso sandwich con Pollo y especies</span
+                >
+              </p>
+              <p class="price">$65</p>
+            </li>
+            <li>
+              <p>
+                Sandwich de Jamón y queso<span
+                  >Queso Amarillo con Jamón y Queso</span
+                >
+              </p>
+              <p class="price">$59</p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content bg-white">
+        <div class="footer-box ubication">
+          <h3>Ubicación</h3>
+
+          <p>Libertador Av, 123 Main Street</p>
+          <p>Miami, Florida</p>
+        </div>
+
+        <div class="footer-box reservation">
+          <h3>Reservación</h3>
+          <p>Tel: +1 321 456 7890</p>
+          <a href="tel:+13214567890">Llamar</a>
+        </div>
+        <div class="footer-box schedule">
+          <h3>Horario</h3>
+          <p>Lun-Jue: 11:00 - 22:00</p>
+          <p>Vie-Sab: 09:00 - 24:00</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        Todos los derechos reservados | <a href="index.html">La Cafetería</a>
+      </p>
+    </footer>
+  </body>
+</html>

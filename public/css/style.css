@@ -411,41 +411,6 @@ img {
   margin: 0 auto;
 }
 
-.bg-primary {
-  background-color: #5e311e;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-/** margin top negative -100px */
-.mt-negative-10 {
-  margin-top: -10rem;
-}
-
-.roboto-400 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-700 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-900 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.text-center {
-  text-align: center;
-}
-
 .logo {
   width: 50%;
   margin: 0 auto;
@@ -505,6 +470,10 @@ img {
 
 .header-process {
   background-image: url(../img/header_proceso.jpg);
+}
+
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
 }
 
 .footer {
@@ -870,4 +839,80 @@ img {
   width: 50%;
   height: 5px;
   background-color: #c39c63;
+}
+
+.menu-content {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3/4;
+}
+@media (min-width: 600px) {
+  .menu-content {
+    aspect-ratio: 5/5;
+  }
+}
+@media (min-width: 712px) {
+  .menu-content {
+    aspect-ratio: 3/3;
+  }
+}
+@media (min-width: 768px) {
+  .menu-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    aspect-ratio: 16/6;
+    background-size: 50%;
+    background-position: bottom right;
+  }
+}
+.menu-content .texto p {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .menu-container {
+    padding: 5rem 5rem 0;
+  }
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
+}
+
+/** margin top negative -100px */
+.mt-negative-10 {
+  margin-top: -10rem;
+}
+
+.bg-primary {
+  background-color: #5e311e;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-900 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
 }
