@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@700;900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Styles -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Cafetería SASS</title>
+  </head>
+  <body>
+    <header class="header header-contact">
+      <div class="header-content container">
+        <div class="appbar">
+          <div class="logo">
+            <img src="img/logo.svg" alt="Cafeteria logo" />
+          </div>
+
+          <nav class="navbar-main">
+            <a href="index.html">Inicio</a>
+            <a href="about.html">Nosotros</a>
+            <a href="process.html">Proceso</a>
+            <a href="menu.html">Menú</a>
+            <a href="gallery.html">Galería</a>
+            <a class="active" href="contact.html">Contacto</a>
+          </nav>
+        </div>
+
+        <!-- Text -->
+        <div class="header-text">
+          <h1>Mejores granos, Mejor Café</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="container main-content">
+      <h2><span>Reserva tu</span>Mesa</h2>
+
+      <div class="contact-content">
+        <form class="form">
+          <div class="field">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Tu Nombre" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Tu Email" />
+          </div>
+
+          <div class="field">
+            <label for="quantity">Número de personas:</label>
+            <select id="quantity">
+              <option disabled selected value="">-- Seleccione --</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="mas">+4</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="time">Hora:</label>
+            <input type="time" id="time" min="09:00" max="18:00" />
+          </div>
+
+          <div class="field">
+            <label for="date">Hora:</label>
+            <input type="date" id="date" />
+          </div>
+
+          <div class="field">
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-content bg-white">
+        <div class="footer-box ubication">
+          <h3>Ubicación</h3>
+
+          <p>Libertador Av, 123 Main Street</p>
+          <p>Miami, Florida</p>
+        </div>
+
+        <div class="footer-box reservation">
+          <h3>Reservación</h3>
+          <p>Tel: +1 321 456 7890</p>
+          <a href="tel:+13214567890">Llamar</a>
+        </div>
+        <div class="footer-box schedule">
+          <h3>Horario</h3>
+          <p>Lun-Jue: 11:00 - 22:00</p>
+          <p>Vie-Sab: 09:00 - 24:00</p>
+          <p>Domingo: Cerrado</p>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <p class="copyright">
+        Todos los derechos reservados | <a href="index.html">La Cafetería</a>
+      </p>
+    </footer>
+  </body>
+</html>
