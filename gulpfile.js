@@ -16,16 +16,29 @@ const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+// SourceMaps: Mapear los archivos originales a los archivos compilados
+const sourcemaps = require('gulp-sourcemaps');
+
+// cssnano: minificar CSS
+const cssnano = require('cssnano');
+
 function scssToCssCompiler(done) {
   // Pasos para compilar los archivos Sass
   // 1. Identificar el archivo Sass
   src('src/scss/style.scss')
+    .pipe(sourcemaps.init())
     // 2. Compilarlo
     .pipe(sass())
     // .pipe(sass({ outputStyle: 'compressed' })) // Minificar el CSS
     // .pipe(sass({ outputStyle: 'expanded' })) // Expandir el CSS
-    .pipe(postcss([autoprefixer()])) // Agregar los prefijos de compatibilidad
+    .pipe(
+      postcss([
+        autoprefixer(), // Agregar los prefijos de compatibilidad
+        cssnano(), // Minificar el CSS (reduce y optimiza el css)
+      ])
+    )
     // 3. Guardar el archivo css
+    .pipe(sourcemaps.write('.'))
     .pipe(dest('public/css'));
 
   done();
