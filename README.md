@@ -6,7 +6,7 @@ Pasos para correr el proyecto:
 npm install --global gulp-cli
 ```
 
-2. Instalas las dependencias
+2. Instalar las dependencias
 
 ```bash
 npm i
